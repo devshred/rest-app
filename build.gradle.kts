@@ -41,9 +41,9 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude("junit")
     }
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.2.0")
-    testCompile("org.junit.jupiter:junit-jupiter-params:5.2.0")
-    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.2")
+    testCompile("org.junit.jupiter:junit-jupiter-params:5.7.2")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.7.2")
 
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0")
     testImplementation("org.testcontainers:junit-jupiter:1.11.3")
