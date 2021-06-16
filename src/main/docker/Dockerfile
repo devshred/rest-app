@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:18
 
 ARG JAR_FILE
 EXPOSE 8080
