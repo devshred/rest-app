@@ -35,7 +35,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    implementation("org.flywaydb:flyway-core:5.2.4")
+    implementation("org.flywaydb:flyway-core:7.10.0")
     implementation("org.postgresql:postgresql:42.2.6")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
