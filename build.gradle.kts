@@ -4,15 +4,15 @@ import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
     id("org.springframework.boot") version "2.1.6.RELEASE"
-    id("io.spring.dependency-management") version "1.0.7.RELEASE"
+    id("io.spring.dependency-management") version "1.0.11.RELEASE"
 
     kotlin("jvm") version "1.3.41"
     kotlin("kapt") version "1.3.41"
     kotlin("plugin.spring") version "1.3.41"
     kotlin ("plugin.jpa") version "1.3.41"
 
-    id("com.palantir.docker") version "0.22.1"
-    id("com.github.ben-manes.versions") version "0.28.0"
+    id("com.palantir.docker") version "0.26.0"
+    id("com.github.ben-manes.versions") version "0.39.0"
 
     `maven-publish`
 }
@@ -36,7 +36,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.flywaydb:flyway-core:5.2.4")
-    implementation("org.postgresql:postgresql:42.2.6")
+    implementation("org.postgresql:postgresql:42.2.21")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude("junit")
@@ -45,9 +45,9 @@ dependencies {
     testCompile("org.junit.jupiter:junit-jupiter-params:5.2.0")
     testRuntime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
 
-    testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0")
-    testImplementation("org.testcontainers:junit-jupiter:1.11.3")
-    testImplementation("org.testcontainers:postgresql:1.11.3")
+    testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
+    testImplementation("org.testcontainers:junit-jupiter:1.15.3")
+    testImplementation("org.testcontainers:postgresql:1.15.3")
 }
 
 tasks.withType<JavaCompile> {
